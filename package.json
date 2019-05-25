@@ -1,0 +1,30 @@
+{
+  "name": "Life-Saver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "express-rate-limit": "^4.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.2.4",
+    "mongoose": "^5.5.8",
+    "nodemailer": "^6.1.1",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "springedge": "^1.0.5",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
