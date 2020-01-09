@@ -26,7 +26,8 @@ router.post('/posts/create', auth, async (req, res) => {
         const post = new Post({
             ...req.body,
             owner: req.user._id,
-            creatorName: (await User.findOne({_id: req.user._id})).name
+            creatorName: (await User.findOne({_id: req.user._id})).name,
+            mobile: (await User.findOne({_id: req.user._id})).mobile
         })
         await post.save()
         res.status(201).send(post)

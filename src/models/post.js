@@ -23,6 +23,10 @@ const postSchema = mongoose.Schema({
     creatorName: {
         type: mongoose.Schema.Types.String,
         required: true
+    },
+    mobile: {
+        type: mongoose.Schema.Types.Number,
+        required: true
     }
 }, {
     timestamps: true

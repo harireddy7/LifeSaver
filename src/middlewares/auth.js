@@ -3,6 +3,9 @@ const { User } = require('../models/user')
 require('dotenv').config()
 
 const auth = async (req, res, next) => {
+    console.log(req.headers);
+    console.log(req.header('Authorization'))
+    // console.log(token)
 
     try {
         const token = req.header('Authorization').replace('Bearer ','')
